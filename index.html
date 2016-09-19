@@ -1,0 +1,235 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/appi.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="css/estilos.css" media="all">
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Datos personales del alumno </h1>
+  </div>
+  <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>DATOS PERSONALES</h1>
+           <div align="left">
+           <form name="formulario" method="post" enctype="application/x-www-form-urlencoded" id="formulario">
+    <fieldset> 
+    <h2>Ingrese sus datos</h2>
+
+<br>
+    <div>
+    <label for="foto">Foto personal:</label>
+    <input type="file" class="foto">
+    </div>
+<br>
+    <div>
+    <label for="nombre">Nombre(s):</label>
+    <input type="text" name="nombre" id="nombre" maxlength="100" placeholder="Ingrese su nombre">
+    </div>
+<br>
+    <div>
+    <label for="apellido">Apellidos:</label>
+    <input type="text" name="apellido" id="apellido" maxlength="100" placeholder="Ingrese su apellido">
+    </div>
+    <br><br>
+    <div>
+    <label for="fechaN">Fecha de nacimiento</label>
+        <input type="date" id="fechaN" name="fechaN">
+        </div>
+        <br><br>
+        
+    <div>
+    <label for="dirección">Direcci&oacute;n:</label>
+    <input type="text" name="direccion" id="direccion" maxlength="250" placeholder="Escribe tu direcci&oacute;n">
+    </div> 
+<br>
+    <div>
+   <label for="telefono">Tel&eacute;fono:</label>
+   <input type="tel" name="telefono" id="telefono" maxlength="11" placeholder="Escribe tu tel&eacute;fono">
+   </div>
+<br>
+    <div> 
+    <label for="url">Sitio web:</label>
+    <input type="text" name="url" id="url" maxlength="250" placeholder="Escribe tu sitio web">
+   </div>
+<br>
+    <div>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" maxlength="200" placeholder="Escribe tu email">
+    </div>
+
+ 
+   <div>
+   <br>
+   <label for="civil">Estado civil: </label><br>
+   <input type="checkbox"><label align="center">Casada</label>
+   <input type="checkbox"><label align="center">Soltera</label>
+   <br><br>
+   </div>
+   <label for="color" >Color favorito: </label>
+        <input type="color" id="color" name="color"><br><br>
+        <label for="genero"> Género</label>
+        <select id="genero" name="genero">
+        <option> Femenino</option>
+        <option> Masculino</option>
+        </select><br><br>
+        </fieldset><br>
+
+
+
+ 
+
+       </form>
+
+     </div>
+
+</div>
+
+      
+      </div>
+  
+<div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+     <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>ENCUESTA</h2>
+     <p>Realízala</p>
+       </a>
+      </li>
+      
+     
+    
+      
+    </ul>
+</div>
+
+
+<div>
+
+<h2>CREA TU NUEVA CUENTA</h2>
+
+<label for="user"><strong>Usuario:</strong></label>
+    <input type="text" name="nombre" id="nombre" maxlength="100" placeholder="Crea un usuario">
+<br><br>
+<label for="user"><strong>Contraseña:</strong></label>
+    <input type="password" name="nombre" id="nombre" maxlength="100" placeholder="Crea una contraseña ">
+
+<br><br>
+   <div>
+   <label for="mensaje"><strong>¿Para qué respondes éstas preguntas?</strong></label><br>
+   <textarea name="mensaje" id="mensaje" rows="10" cols="50" maxlength="1000" placeholder="Escribe tu mensaje"></textarea>
+   </div>
+   <div>
+<br>
+   <button type="button" name="enviar" id="enviar">Enviar</button>
+   
+</div>
+
+
+</div>
+ 
+
+
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+    <img src="imagenes/persona_rosa.png" width="46" height="46">
+  </div>
+  <div>
+    <h4>Aplicacion Uno</h4>
+    <h4>Yesenia Contreras</h4>
+  </div>
+</div>
+</div>
+      
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>ENCUESTA</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+       <label for="leer"><strong>¿Cuántas veces has leído en esta semana?</strong></label>
+       <input type="number">
+       <br><br>
+       <label for="leer"><strong>¿Qué haces en tu tiempo libre?</strong></label>
+       <input type="radio"><label align="center">Ver TV</label>
+       <input type="radio"><label align="center">Navegar por internet</label>
+       <input type="radio"><label align="center">Ejercicio</label><br>
+       <div>
+<br><br>
+       <label for="leer"><strong>¿Qué navegador utilizas?</strong></label>
+
+
+          <select name="transporte">
+          <option>Safari</option>
+          <option>Chrome</option>
+          <option>Explorer</option>
+         </select>
+       </div>
+<br><br>
+       <div>
+ <label for="leer"><strong>¿Qué dias navegas por internet?</strong></label>
+      <select name="dia de la semana">
+
+       <option>lunes</option>
+       <option>martes</option>
+       <option>miercoles</option>
+       <option>jueves</option>
+       <option>viernes</option>
+       <option>sábado</option>
+       <option>domingo</option>
+
+      </select>
+
+       </div>
+<br><br>
+
+      <div>
+<label for="leer"><strong>Sabores de helado favorito</strong></label>
+
+   <input type="checkbox"><label align="center">Chocolate</label>
+   <input type="checkbox"><label align="center">Vainilla</label>
+   <input type="checkbox"><label align="center">Fresa</label>
+   <input type="checkbox"><label align="center">Limon</label>
+
+
+      </div>
+<br><br>
+
+      <div>
+<label for="leer"><strong>¿Cuántos años llevas estudiando?</strong></label>
+ <input type="number">
+
+      </div><br><br>
+
+
+
+
+
+
+    </div>
+   </div>
+
+ <div data-role="footer" data-theme="a">
+  <h4>FORMULARIO</h4>
+ </div>
+</div>
+</div>
+
+
+
+  
+</body>
+</html>

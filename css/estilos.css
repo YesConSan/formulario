@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+body{background: #FCF
+color:#fff;
+font-family:Verdana, Geneva, sans-serif;}
+form
+
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	width:50%;
+	margin:0 auto;
+}
+fieldset
+{
+	border: 2px solid #999;
+}
+legend
+
+{
+	font-size:50px;
+	color:#909;
+}
+label
+{
+	color:#000;
+	cursor:pointer;
+	font-size:18px;
+}
+label:hover
+{
+	color:#4682b4;
+	cursor:pointer;
+	font-size:18px;
+}
+input[type="text"]
+{
+	background:#000;
+	color:#9FF;
+	font-size:20px;
+	width:250px;
+	height:30px;
+}
+input[type="text"]
+{
+	background:#D9F4F3;
+	color:#000;
+	font-size:18px;
+}
+textarea
+{
+	background: #CCC;
+	color: #c9c;
+	font-size:14px;
+}
+textarea:focus
+{
+	background: #FCF;
+	color:#C99;
+}
+button, input[type="reset"]
+{
+	background: #C69; 
+	border-radius:5px;
+	color:#FFF;
+	cursor:pointer;
+	padding:5px 15px;
+}
+button:hover, input[type="reset"]:hover
+{
+	background: #C6C;
+	color: #000;
+	cursor:pointer;
+	padding:5px 15px;
+}
+#foto{
+	background: #C69; 
+	border-radius:5px;
+	color:#FFF;
+	cursor:pointer;
+	padding:5px 15px;
+}
